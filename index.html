@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giám sát máy CNC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="showPasswordForm(); handleClientLoad();">
+    <div id="password-form" class="centered">
+        <h2>Nhập mật khẩu</h2>
+        <input type="password" id="password-input" placeholder="Mật khẩu">
+        <button onclick="checkPassword()">Xác nhận</button>
+    </div>
+    <div id="content" style="display:none;">
+        <h1>GIÁM SÁT HỆ THỐNG MÁY CNC NHÀ MÁY KHUÔN</h1>
+        <p>Layout nhà máy Khuôn</p>
+        <img src="layout_khuon.jpg" alt="Layout Khuôn">
+        <h2>Danh sách địa chi IP:</h2>
+        <ul id="file-list"></ul>
+    </div>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
